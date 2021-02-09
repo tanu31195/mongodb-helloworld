@@ -74,6 +74,9 @@ Run CMD as admin to stop the MongoDB background service in windows
 To start the service
 `mongod`
 
+To connect
+`mongo`
+
 Clear screen
 `cls`
 
