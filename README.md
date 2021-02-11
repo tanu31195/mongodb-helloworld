@@ -2,13 +2,15 @@
 
 ## What is MongoDB?
 
+<https://docs.mongodb.com/>
+
 - MongoDB is a database solution
 - Database server
 - Popular for Read/Write heavy applications
 - In MySQL there're tables but in MongoDB we have collections
 - Inside of a collection there're Documents
 - MongoDB is Schemaless
-- Documents are in JSON(BSON) format key value pairs
+- Documents are in JSON(BSON) format (key value pairs)
 
         {
             "name": "Tanushka",
@@ -28,8 +30,8 @@
 - Hobbies are a list of embedded documents
 
 APPLICATION----------------------------------------------------------------------------------->DATA
-Frontend (UI) > Backend (Server)> Drivers(Node.js,Java, Python)<<< Queries >>> MongoDB Server << Communicate >> Storage Engine << File/Data Access >> DataBase files(Slow) || Memory(Fast)
 
+Frontend (UI) > Backend (Server)> Drivers(Node.js,Java, Python)<<< Queries >>> MongoDB Server << Communicate >> Storage Engine << File/Data Access >> DataBase files(Slow) || Memory(Fast)
 
 ### BSON Data Structure
 
@@ -93,3 +95,7 @@ Insert document(MacBook Pro) to a collection(products)
 To view documents in a collection
 `db.products.find()`
 `db.products.find().pretty()`
+
+To start the server in a different port
+`mongod --port 27018`
+`mongo --port 27018`
