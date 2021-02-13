@@ -1,7 +1,7 @@
 # Section 2: Understanding the Basics & CRUD Operations
 
 - Database can have multiple collections, collections can have documents
-- Databases, collections and documents are created implicitly when we are storing data(created on demand)
+- Databases, collections and documents are created implicitly when we are storing data(created on demand/ lazily when a document is inserted)
 
         admin   0.000GB -> Users and roles
         config  0.000GB -> Configurations
@@ -64,8 +64,9 @@ pretty() is not supported in findOne(), because **pretty() is a method of the cu
 
 #### find()
 
-- find() does not return all results and it will return a **cursor object** with metadata which allows us to cycle through results
+- find() does not return a list of documents and it will return a **cursor object** with metadata which allows us to cycle through results
 - find() gives the first 20 documents by default
+- filters can be used to find specific documents
 
 - `it` allows to fetch the next set of data
 
