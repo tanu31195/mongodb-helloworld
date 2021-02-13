@@ -3,13 +3,15 @@
 ## What is MongoDB?
 
 <https://docs.mongodb.com/>
+<https://docs.mongodb.com/manual/mongo/>
+<https://docs.mongodb.com/manual/tutorial/getting-started/>
 
 - MongoDB is a database solution
 - Database server
 - Popular for Read/Write heavy applications
 - In MySQL there're tables but in MongoDB we have collections
 - Inside of a collection there're Documents
-- MongoDB is Schemaless
+- MongoDB is Schema-less
 - Documents are in JSON(BSON) format (key value pairs)
 
         {
@@ -87,6 +89,9 @@ Show existing DB information
 
 Create new DB (It will automatically switch to the newly created db)
 `use dbname`
+
+Show current DB
+`db`
 
 Insert document(MacBook Pro) to a collection(products)
 `db.products.insertOne({"name": "MacBook Pro", "brand": apple, "price": 1099})`
