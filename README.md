@@ -104,3 +104,11 @@ To view documents in a collection
 To start the server in a different port
 `mongod --port 27018`
 `mongo --port 27018`
+
+To drop a database, load the database that needs to be dropped,
+`use databaseName`
+and then execute
+`db.dropDatabase()`
+
+Drop a collection by,
+`db.myCollection.drop()`
